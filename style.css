@@ -1,0 +1,105 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #003366; /* Blue background */
+    color: white; /* White text */
+  }
+  
+  header {
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2.5em;
+  }
+  
+  /* Container Layout */
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  
+  .video-section {
+    width: 65%;
+    text-align: center;
+  }
+  
+  video {
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  #consent-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: white;
+    color: #003366;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    display: block;
+  }
+  
+  #consent-button:hover {
+    background-color: #003366;
+    color: white;
+  }
+  
+  /* Comments Section */
+  #comments-section {
+    width: 30%;
+    background-color: #002244;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  #comment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  #comment-input {
+    width: 100%;
+    height: 50px;
+    background-color: #003366;
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+  }
+  
+  #comments {
+    margin-top: 10px;
+  }
+  
+  /* Lower Bar */
+  .lower-bar {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #004080;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  #survey-section,
+  #reactions-section {
+    width: 45%;
+  }
+  
+  #emoji-reactions button {
+    background-color: transparent;
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+  }
+  
+  #emoji-reactions button:hover {
+    transform: scale(1.2);
+  }
+  

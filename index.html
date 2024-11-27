@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Surveillance Project</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>The Surveillance Project</h1>
+  </header>
+  <main>
+    <div class="container">
+      <!-- Video Section -->
+      <div class="video-section">
+        <video id="intro-video" controls>
+          <source src="video.mp3.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <button id="consent-button" style="display: none;">Consent</button>
+      </div>
+
+      <!-- Sidebar (Comments Section) -->
+      <aside id="comments-section">
+        <h2>Comments</h2>
+        <form id="comment-form">
+          <textarea id="comment-input" placeholder="Write your comment here..."></textarea>
+          <button type="submit">Submit</button>
+        </form>
+        <div id="comments"></div>
+      </aside>
+    </div>
+
+    <!-- Lower Bar (Survey and Reactions) -->
+    <div class="lower-bar">
+      <section id="survey-section">
+        <h2>Survey</h2>
+        <form id="survey-form">
+          <div class="question">
+            <label for="q1">What did you find interesting?</label>
+            <textarea id="q1"></textarea>
+          </div>
+          <div class="question">
+            <label for="q2">What would you have done in that situation?</label>
+            <textarea id="q2"></textarea>
+          </div>
+          <div class="question">
+            <label for="q3">Would you recommend this video?</label>
+            <select id="q3">
+              <option value="" selected disabled>Select an option</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+          </div>
+          <button type="submit">Submit Survey</button>
+        </form>
+      </section>
+
+      <section id="reactions-section">
+        <h2>Reactions</h2>
+        <div id="emoji-reactions">
+          <button data-reaction="👍">👍</button>
+          <button data-reaction="❤️">❤️</button>
+          <button data-reaction="😂">😂</button>
+          <button data-reaction="😮">😮</button>
+        </div>
+      </section>
+    </div>
+  </main>
+  <script src="tracker.js"></script>
+</body>
+</html>
